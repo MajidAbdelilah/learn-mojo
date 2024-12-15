@@ -8,10 +8,10 @@ fn main():
 	matrix *= 2.0
 	print(matrix)
 	print(simdbitwidth())
-	print(chars_len("Hello, world!"))
+	print(str_len("Hello, world!"))
 
 
-fn chars_len(s: StringLiteral) -> UInt64:
+fn str_len(s: StringLiteral) -> UInt64:
 	result = UInt64(0)
 	s_len = len(s)
 	ptr = UnsafePointer(s.unsafe_ptr())
